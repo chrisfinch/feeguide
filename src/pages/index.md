@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: The Frontend Engineers Guide
-image: /img/foo.png
+image: /img/bgmonokai.png
 heading: The Frontend Engineers Guide
 subheading: Everything they don't tell you.
 mainpitch:
