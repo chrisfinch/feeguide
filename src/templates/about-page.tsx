@@ -5,7 +5,11 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate: React.FC<{
+  title: string;
+  content: string;
+  contentComponent: React.ElementType;
+}> = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
@@ -26,13 +30,9 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   );
 };
 
-AboutPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-};
-
-const AboutPage = ({ data }) => {
+const AboutPage: React.FC<{
+  data: any;
+}> = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
@@ -44,10 +44,6 @@ const AboutPage = ({ data }) => {
       />
     </Layout>
   );
-};
-
-AboutPage.propTypes = {
-  data: PropTypes.object.isRequired,
 };
 
 export default AboutPage;

@@ -1,15 +1,27 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
+import Features, { GridItem } from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
+import { ImageDataLike } from "gatsby-plugin-image/dist/src/components/hooks";
+
+interface IIndexPageTemplateProps {
+  image: ImageDataLike;
+  title: string;
+  heading: string;
+  subheading: string;
+  mainpitch: Record<string, any>;
+  description: string;
+  intro: {
+    blurbs: GridItem[];
+  };
+}
 
 // eslint-disable-next-line
-export const IndexPageTemplate = ({
+export const IndexPageTemplate: React.FC<IIndexPageTemplateProps> = ({
   image,
   title,
   heading,
@@ -74,19 +86,13 @@ export const IndexPageTemplate = ({
   );
 };
 
-IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
-};
-
-const IndexPage = ({ data }) => {
+const IndexPage: React.FC<{
+  data: {
+    markdownRemark: {
+      frontmatter: any;
+    };
+  };
+}> = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
@@ -102,14 +108,6 @@ const IndexPage = ({ data }) => {
       />
     </Layout>
   );
-};
-
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
 };
 
 export default IndexPage;
