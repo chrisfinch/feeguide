@@ -1,19 +1,14 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 path: /about
-title: About our values
+title: About feeguide.dev
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+T﻿he Frontend Engineers guide was started to provide the complete path from 0 to success in the career of frontend web development. There's a ton of information out there about how to w in web dev but none of it is focused on the discreet specialism of Frontend Engineering and 99% of it focusing on the technical aspects.\
+\
+T﻿here's only so much that the 999th blog post about to how write fizzbuzz, calculate the nth fibbonaci number or write a TODO app in React can teach you about what it actually takes to not only land in Frontend Engineering, but to keep it and succeed.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+### About the author
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+[Chris Finch](https://www.linkedin.com/in/chrisfinch/) is a career Frontend Engineer who, since 2008, has worked across the spectrum of Frontend Engineering roles from small local dev shops, through agencies and consultancies, global communications and media brands and big tech as both a full time employee and contractor.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+Chris has participated in hundreds of technical interviews as both the interviewee and interviewer and, along with the skills from an early career stint as a technical recruiter, is perfectly positioned to advise you on how to succeed in your search for a Frontend Engineering job.
